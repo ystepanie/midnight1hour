@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: midnight1hour-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: midnight1hour
+  template:
+    metadata:
+      labels:
+        app: midnight1hour
+    spec:
+      containers:
+      - name: midnight1hour
+        image: gcr.io/jincchan-2024-06-27/midnight1hour:latest
+        ports:
+        - containerPort: 8080
+
