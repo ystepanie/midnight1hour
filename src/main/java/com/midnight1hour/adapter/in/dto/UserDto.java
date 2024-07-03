@@ -1,5 +1,6 @@
 package com.midnight1hour.adapter.in.dto;
 
+import com.midnight1hour.util.MessageUtil;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
