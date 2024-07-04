@@ -14,7 +14,10 @@ public class UserPersistenceAdapter implements LoginUserPort {
     @Override
     public User findByUserId(String userId) {
         UserEntity userEntity = jpaUserRepository.findByUserId(userId);
-        User user = User.builder()
+        User user = new User();
+        if(userEntity == null) return null;
+
+        user = User.builder()
                 .userSeq(userEntity.getUserSeq())
                 .userId(userEntity.getUserId())
                 .userPw(userEntity.getUserPw())

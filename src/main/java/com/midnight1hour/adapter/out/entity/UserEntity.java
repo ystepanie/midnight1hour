@@ -13,7 +13,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userSeq;
 
-    @Column(name = "user_id", length = 20, nullable = false)
+    @Column(name = "user_id", length = 15, nullable = false)
     private String userId;
 
     @Column(name = "user_pw", length = 20, nullable = false)
