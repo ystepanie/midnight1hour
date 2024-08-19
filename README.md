@@ -285,7 +285,10 @@ spec:
 - **Build** : Gradle Groovy
 - **Skills** : lombok, Docker, Kubernetes, GCP
 
-## 📌 프로젝트를 만들며 고민한 점들
+## 📌 프로젝트에 관련된 블로그 포스팅
+#### 클린 아키텍처를 읽고 느낀점과 중요한점 정리 - <a href="https://jincchan.tistory.com/51" >블로그 이동</a>
+- SOLID 규칙?
+- 계층 간 역할 분리의 중요성
 #### 헥사고날 아키텍처의 정리 - <a href="https://jincchan.tistory.com/53" >블로그 이동</a>
 - 헥사고날 아키텍처 패키지 설명
 - 각 계층별 역할과 소스에 대한 상세 설명
